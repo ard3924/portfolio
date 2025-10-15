@@ -1,0 +1,2 @@
+- [x] Update href in index.html to point to "assets/autoCV__1_ (1).pdf"
+- [ ] Test the resume download by launching the site in browser and clicking the link
