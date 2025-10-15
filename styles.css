@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		/* Light theme gradient */
+		background: radial-gradient(1200px 800px at 80% -10%, rgba(124, 92, 255, 0.12), transparent 60%);
+	}
+
+	html.dark body {
+		/* Dark theme gradient */
+		background: radial-gradient(1200px 800px at 80% -10%, rgba(124, 92, 255, 0.2), transparent 60%),
+			linear-gradient(180deg, #0b0c10 0%, #0b0c10 100%);
+	}
+}
+
+@layer components {
+	.skill-pill {
+		/* These classes were in your HTML, let's make a component */
+		@apply rounded-full border border-border bg-panel py-2 px-3 text-sm dark:border-dark-border dark:bg-dark-panel;
+	}
+
+	.btn {
+		@apply inline-flex items-center justify-center rounded-lg border border-border bg-panel py-2.5 px-3.5 font-semibold text-text no-underline dark:border-dark-border dark:bg-dark-panel dark:text-dark-text;
+	}
+
+	.btn.primary {
+		@apply border-transparent bg-gradient-to-b from-accent to-[#6849ff] text-white dark:text-white;
+	}
+
+	.btn.ghost {
+		@apply bg-transparent text-muted dark:text-dark-muted;
+	}
+
+	.project-card:hover {
+		@apply shadow-lg border-accent dark:border-accent;
+	}
+
+	@media (max-width: 800px) {
+		.site-nav.open ul {
+			@apply absolute top-16 right-0 flex-col gap-3 rounded-bl-radius border-b border-l border-border bg-panel p-4 shadow dark:border-dark-border dark:bg-dark-panel;
+		}
+	}
+}
+
+@layer utilities {
+
+	[data-animate],
+	[data-stagger] {
+		@apply opacity-0 scale-95;
+	}
+
+	.animate-in {
+		@apply opacity-100 scale-100;
+		transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+	}
+}

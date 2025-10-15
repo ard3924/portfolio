@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio – Aravind R</title>
+    <meta name="description" content="Personal portfolio showcasing projects, skills, and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="bg-background text-text dark:bg-dark-background dark:text-dark-text">
+    <a class="skip-link absolute -left-[9999px] rounded-lg bg-panel py-2 px-3 text-text focus:left-3 focus:top-3 focus:z-50 dark:bg-dark-panel dark:text-dark-text"
+        href="#main">Skip to content</a>
+
+    <header
+        class="sticky top-0 z-10 border-b border-border bg-background/60 backdrop-blur backdrop-saturate-150 dark:border-dark-border dark:bg-dark-background/60"
+        id="top">
+        <div class="container flex h-16 items-center justify-between">
+            <a href="#top" class="font-bold tracking-tight text-text dark:text-dark-text" aria-label="Homepage">Aravind
+                R</a>
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle"
+                    class="flex h-8 w-8 items-center justify-center rounded-lg border border-border dark:border-dark-border"
+                    aria-label="Toggle theme">
+                    <svg id="theme-icon-light" class="h-5 w-5 stroke-text dark:stroke-dark-text" viewBox="0 0 24 24"
+                        fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg id="theme-icon-dark" class="hidden h-5 w-5 stroke-text dark:stroke-dark-text"
+                        viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle md:hidden" aria-expanded="false" aria-controls="site-nav"
+                    aria-label="Toggle navigation">
+                    <svg class="icon-open block h-6 w-6 stroke-text dark:stroke-dark-text" viewBox="0 0 24 24"
+                        fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="icon-close hidden h-6 w-6 stroke-text dark:stroke-dark-text" viewBox="0 0 24 24"
+                        fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav id="site-nav" class="site-nav hidden md:block" aria-label="Primary Navigation">
+                <ul class="flex items-center gap-5 text-muted dark:text-dark-muted">
+                    <li><a class="hover:text-text focus:text-text dark:hover:text-dark-text dark:focus:text-dark-text"
+                            href="#projects">Projects</a></li>
+                    <li><a class="hover:text-text focus:text-text dark:hover:text-dark-text dark:focus:text-dark-text"
+                            href="#about">About</a></li>
+                    <li><a class="hover:text-text focus:text-text dark:hover:text-dark-text dark:focus:text-dark-text"
+                            href="#education">Education</a></li>
+                    <li><a class="hover:text-text focus:text-text dark:hover:text-dark-text dark:focus:text-dark-text"
+                            href="#certifications">Certifications</a></li>
+                    <li><a class="hover:text-text focus:text-text dark:hover:text-dark-text dark:focus:text-dark-text"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="flex min-h-[calc(100vh-4rem)] items-center py-16 md:py-20"
+            aria-labelledby="hero-title">
+            <div class="container grid items-center gap-6 text-center md:grid-cols-[1.2fr,0.8fr] md:text-left">
+                <div data-animate class="opacity-0">
+                    <h1 id="hero-title" class="text-4xl font-bold leading-tight md:text-5xl">Hi, I’m <span
+                            class="text-accent">Aravind R</span>.</h1>
+                    <p class="mt-3 mb-5 text-muted dark:text-dark-muted md:max-w-xl">
+                        A Computer Science student with a passion for Full Stack Development and Generative AI, eager to
+                        build impactful solutions.
+                    </p>
+                    <div data-animate class="flex justify-center gap-3 opacity-0 md:justify-start">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="Aravind_R_Resume.pdf" download>Download Resume</a>
+                        <a class="btn ghost" href="#contact">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="relative hidden h-64 md:block" aria-hidden="true">
+                    <div class="blob absolute inset-0 rounded-radius border border-border bg-[radial-gradient(400px_280px_at_30%_20%,rgba(124,92,255,0.2),transparent_60%),conic-gradient(from_220deg_at_60%_40%,rgba(0,224,164,0.15),transparent)] shadow dark:border-dark-border dark:bg-[radial-gradient(400px_280px_at_30%_20%,rgba(124,92,255,0.4),transparent_60%),conic-gradient(from_220deg_at_60%_40%,rgba(0,224,164,0.3),transparent)]"
+                        data-animate class="opacity-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" data-animate class="py-16 md:py-20 opacity-0" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="mb-8 text-3xl font-semibold tracking-tight">Featured Projects
+                </h2>
+                <div id="projects-grid" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                    data-stagger-container role="list" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="about" data-animate class="py-16 md:py-20 opacity-0" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="mb-8 text-3xl font-semibold tracking-tight">About & Skills</h2>
+                <p class="max-w-3xl text-muted dark:text-dark-muted">
+                    I'm a dedicated Computer Science student with a strong foundation in Full Stack Development and
+                    practical
+                    experience in Generative AI. I'm eager to apply my technical and collaborative skills to solve
+                    complex
+                    problems in a dynamic environment.
+                </p>
+            </div>
+            <div class="container mt-8">
+                <ul class="flex flex-wrap gap-2 p-0" data-stagger-container>
+                    <li class="skill-pill" data-stagger>React.js</li>
+                    <li class="skill-pill" data-stagger>Node.js</li>
+                    <li class="skill-pill" data-stagger>Express.js</li>
+                    <li class="skill-pill" data-stagger>MongoDB</li>
+                    <li class="skill-pill" data-stagger>JavaScript</li>
+                    <li class="skill-pill" data-stagger>Tailwind CSS</li>
+                    <li class="skill-pill" data-stagger>Docker</li>
+                    <li class="skill-pill" data-stagger>AWS</li>
+                    <li class="skill-pill" data-stagger>Figma</li>
+                    <li class="skill-pill" data-stagger>Postman</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" data-animate class="py-16 md:py-20 opacity-0" aria-labelledby="education-title">
+            <div class="container">
+                <h2 id="education-title" class="mb-8 text-3xl font-semibold tracking-tight">Education</h2>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" data-stagger-container>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">Kerala University</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">Bachelor of Computer Science</p>
+                        <p class="mt-1 text-xs text-muted dark:text-dark-muted">2022 – 2025</p>
+                    </div>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">ICT Academy of Kerala</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">Full Stack Development (MERN)</p>
+                        <p class="mt-1 text-xs text-muted dark:text-dark-muted">Pursuing</p>
+                    </div>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">Navajeevan Bethany Vidyalaya</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">Higher Secondary Education, Science</p>
+                        <p class="mt-1 text-xs text-muted dark:text-dark-muted">2020 – 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" data-animate class="py-16 md:py-20 opacity-0"
+            aria-labelledby="certifications-title">
+            <div class="container">
+                <h2 id="certifications-title" class="mb-8 text-3xl font-semibold tracking-tight">Certifications
+                </h2>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2" data-stagger-container>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">Career Essentials in Generative AI</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">Microsoft & LinkedIn Learning</p>
+                    </div>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">Learning Microsoft 365 Copilot for Work</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">LinkedIn Learning</p>
+                    </div>
+                    <div class="rounded-lg border border-border bg-panel p-4 dark:border-dark-border dark:bg-dark-panel"
+                        data-stagger>
+                        <h3 class="font-semibold">React Essential Training</h3>
+                        <p class="text-sm text-muted dark:text-dark-muted">LinkedIn Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-animate class="py-16 md:py-20 opacity-0" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="mb-8 text-3xl font-semibold tracking-tight">Contact</h2>
+                <p>Interested in collaborating or have a question? I’d love to hear from you.</p>
+                <div class="mt-4 flex flex-wrap gap-3">
+                    <a class="btn primary" href="mailto:aravindr3924@gmail.com">Email Me</a>
+                    <a class="btn ghost" href="https://www.linkedin.com/in/-aravind-r" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a class="btn ghost" href="https://github.com/ard3924" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border py-5 text-muted dark:border-dark-border dark:text-dark-muted">
+        <div class="container">
+            <p>© <span id="year"></span> Aravind R. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
+</html>

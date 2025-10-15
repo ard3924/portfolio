@@ -1,0 +1,16 @@
+[
+	{
+		"title": "Personal Portfolio",
+		"description": "A fast, responsive portfolio site with dynamic projects and accessibility in mind.",
+		"tags": ["HTML", "CSS", "JavaScript"],
+		"links": { "demo": "https://example.com", "code": "https://github.com/your/repo" }
+	},
+	{
+		"title": "Todo App",
+		"description": "A minimalistic todo application with offline support and keyboard shortcuts.",
+		"tags": ["PWA", "TypeScript", "LocalStorage"],
+		"links": { "demo": "https://example.com/todo", "code": "https://github.com/your/todo" }
+	}
+]
+
+
